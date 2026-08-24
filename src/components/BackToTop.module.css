@@ -26,7 +26,6 @@
 
 .backToTopContainer:hover {
   box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
 }
 
 .innerCircle {
@@ -49,7 +48,7 @@
 }
 
 .backToTopContainer:hover .innerCircle {
-  background: var(--color-dark-blue);
+  background: var(--color-bg-section);
 }
 
 .backToTopContainer:hover .iconContainer {

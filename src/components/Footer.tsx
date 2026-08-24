@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Image from "next/image";
 import styles from "./Footer.module.css";
 
 export function Footer() {
@@ -6,33 +6,20 @@ export function Footer() {
     <footer className={styles.footer} id="footer">
       <div className={`container ${styles.footerInner}`}>
         <div className={styles.footerBrand}>
-          <img
+          <Image
             src="https://assets.cdn.filesafe.space/ApWkZ2IFXdvkS2AT3Tqg/media/6a0262de60a7a52fdc112210.png"
             alt="SGSS Logo"
             className={styles.logoImg}
-            style={{ height: '76px' }}
+            style={{ height: '76px', width: 'auto' }}
+            width={200}
+            height={76}
           />
         </div>
-        <div className={styles.footerLinks}>
-          <Link href="#how-it-works" className={styles.footerLink}>
-            How It Works
-          </Link>
-          <Link href="#live-demo" className={styles.footerLink}>
-            Live Demo
-          </Link>
-          <Link href="#how-it-helps" className={styles.footerLink}>
-            How SGSS Helps
-          </Link>
-          <Link href="#lead-form" className={styles.footerLink}>
-            Get Assessment
-          </Link>
-        </div>
+
         <p className={styles.footerCopy}>
-          © {new Date().getFullYear()} Secure Guard Security Services. All rights reserved. Active Video Monitoring turns passive security cameras into proactive real-time defense systems.
+          © {new Date().getFullYear()} Secure Guard Security Services. All rights reserved.
         </p>
       </div>
     </footer>
   );
 }
-
-export default Footer;
