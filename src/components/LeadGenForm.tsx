@@ -6,9 +6,18 @@ import Link from "next/link";
 interface LeadGenFormProps {
   hideHeader?: boolean;
   className?: string;
+  title?: string;
+  subtitle?: string;
+  buttonText?: string;
 }
 
-export function LeadGenForm({ hideHeader = false, className = "" }: LeadGenFormProps) {
+export function LeadGenForm({ 
+  hideHeader = false, 
+  className = "", 
+  title = "Start Transforming Your Logistics Landscape",
+  subtitle,
+  buttonText = "Submit"
+}: LeadGenFormProps) {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -40,8 +49,11 @@ export function LeadGenForm({ hideHeader = false, className = "" }: LeadGenFormP
       {!hideHeader && (
         <div className="text-center mb-6">
           <h2 className="text-2xl md:text-3xl font-extrabold text-[#0fa1db] mb-2 leading-tight tracking-tight">
-            Start Transforming Your Logistics Landscape
+            {title}
           </h2>
+          {subtitle && (
+            <p className="text-sm text-gray-600 mb-4 px-4">{subtitle}</p>
+          )}
           <div className="h-[2px] bg-black w-24 mx-auto rounded-full opacity-20"></div>
         </div>
       )}
@@ -156,7 +168,7 @@ export function LeadGenForm({ hideHeader = false, className = "" }: LeadGenFormP
           type="submit"
           className="w-full bg-[#0fa1db] hover:bg-[#0284c7] text-white font-bold py-3 rounded-lg shadow-lg transition-all text-sm uppercase tracking-wider"
         >
-          Submit
+          {buttonText}
         </button>
       </form>
     </div>
