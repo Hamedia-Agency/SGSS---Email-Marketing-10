@@ -42,7 +42,7 @@ export default function ParticleMesh({ particleCount = 20 }) {
         vx: (Math.random() - 0.5) * 0.4,
         vy: (Math.random() - 0.5) * 0.4,
         radius: Math.random() * 2 + (isGold ? 2 : 1.5),
-        color: isGold ? "254, 207, 49" : "29, 44, 72", // Gold or Dark Blue
+        color: isGold ? "254, 207, 49" : "255, 255, 255", // Gold or White
       });
     }
 

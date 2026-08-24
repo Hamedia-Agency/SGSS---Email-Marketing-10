@@ -5,7 +5,9 @@ import { Footer } from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import { PreFooterCTA } from "@/components/PreFooterCTA";
 import ApplicationsCarousel from "@/components/ApplicationsCarousel";
+import IntegrationCarousel from "@/components/IntegrationCarousel";
 import ParticleMesh from "@/components/ParticleMesh";
+import FloatingShapes from "@/components/FloatingShapes";
 import FAQAccordion from "@/components/FAQAccordion";
 
 export default function HomePage() {
@@ -17,7 +19,7 @@ export default function HomePage() {
       <section className={styles.hero} id="hero">
         <div className={styles.heroBg}>
           <Image
-            src="https://cms.secureguardservices.com/wp-content/uploads/2026/08/em8-1-1.webp"
+            src="https://cms.secureguardservices.com/wp-content/uploads/2026/08/em10-1.webp"
             alt="Active Video Monitoring"
             fill
             className={styles.heroBgImg}
@@ -60,7 +62,7 @@ export default function HomePage() {
           <div className={styles.addonGrid}>
             <div className={styles.addonImageCol}>
               <Image 
-                src="https://cms.secureguardservices.com/wp-content/uploads/2026/08/em8-2.webp" 
+                src="https://cms.secureguardservices.com/wp-content/uploads/2026/08/em10-2.webp" 
                 alt="Live Threat Detection" 
                 width={500} 
                 height={400} 
@@ -184,38 +186,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ===== SECTION 6: Integration & Coverage (Text section) ===== */}
+      {/* ===== SECTION 6: Integration & Coverage (Carousel section) ===== */}
       <section className={styles.section} id="integration">
         <div className="container">
           <div className={styles.sectionHeader}>
             <span className={styles.sectionTag}>Seamless Hardware Use</span>
             <h2 className={styles.sectionTitle}>
-              Existing Camera Integration
+              Integration & Coverage
             </h2>
-            <p className={styles.bodyTextCenteredLight} style={{ color: "var(--color-text)", maxWidth: "800px" }}>
-              Upgrading to active video oversight does not require replacing your current surveillance hardware. Secure Guard evaluates your existing setup, analyzing camera technology, visual coverage, network bandwidth, and vulnerable blind spots. Where compatible, your existing camera feeds are integrated directly into our 24/7 monitoring platform, layering live human judgment and swift response protocols over your existing infrastructure without forcing unnecessary capital expenditures.
-            </p>
           </div>
-          
-          <div className={styles.sectionHeader} style={{ marginTop: '80px' }}>
-            <span className={styles.sectionTag}>Strategic Focus</span>
-            <h2 className={styles.sectionTitle}>
-              Targeted Security Coverage
-            </h2>
-            <p className={styles.bodyTextCenteredLight} style={{ color: "var(--color-text)", maxWidth: "800px" }}>
-              Secure Guard strategically prioritizes high-vulnerability locations—such as perimeter gates, equipment yards, loading docks, parking structures, and storage enclosures—where unauthorized access poses the greatest risk. By focusing active monitoring resources on these critical zones rather than low-risk areas, we deliver maximum security impact and threat prevention right where your property is most exposed.
-            </p>
-          </div>
+          <IntegrationCarousel />
         </div>
       </section>
 
       {/* ===== SECTION 7: Our Security Standard ===== */}
       <section className={styles.standardSection} id="standard">
         <div className={styles.standardPatternLeft}>
-          <ParticleMesh particleCount={22} />
+          <FloatingShapes shapeCount={18} />
         </div>
         <div className={styles.standardPatternRight}>
-          <ParticleMesh particleCount={22} />
+          <FloatingShapes shapeCount={18} />
         </div>
         <div className="container">
           <div className={styles.standardHeader} style={{ marginBottom: 0 }}>
