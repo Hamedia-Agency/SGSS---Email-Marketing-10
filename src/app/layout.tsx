@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Secure Guard Security Services | Active Video Monitoring",
   description:
-    "Turn your passive security cameras into a proactive, real-time defense system. Real-time AI threat detection, professional human verification, and rapid response by SGSS.",
+    "Upgrade your security cameras to a proactive defense system. SGSS offers real-time AI threat detection, live human verification, and rapid response.",
   keywords: [
     "SGSS",
     "Active Video Monitoring",
