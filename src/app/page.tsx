@@ -9,6 +9,7 @@ import IntegrationCarousel from "@/components/IntegrationCarousel";
 import ParticleMesh from "@/components/ParticleMesh";
 import FloatingShapes from "@/components/FloatingShapes";
 import FAQAccordion from "@/components/FAQAccordion";
+import { CoverageSection } from "@/components/CoverageSection";
 
 export default function HomePage() {
   return (
@@ -217,6 +218,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ===== COVERAGE SECTION ===== */}
+      <CoverageSection />
 
       {/* ===== SECTION 8: FAQ ===== */}
       <section className={styles.faqSection} id="faq">
