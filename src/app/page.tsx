@@ -153,12 +153,12 @@ export default function HomePage() {
       {/* ===== SECTION 4: Industry Applications (Carousel) ===== */}
       <section className={styles.featuresSection} id="applications">
         <div className="container">
-          <div className={styles.sectionHeader}>
+          <div className={styles.sectionHeader} style={{ maxWidth: "100%" }}>
             <span className={styles.sectionTag} style={{ color: "#b89000", background: "rgba(254, 207, 49, 0.13)", borderColor: "rgba(254, 207, 49, 0.35)" }}>Customized Coverage</span>
             <h2 className={styles.sectionTitle} style={{ color: "var(--color-white)" }}>
               Industry Applications
             </h2>
-            <p className={styles.bodyTextCenteredLight} style={{ color: "rgba(255, 255, 255, 0.85)" }}>
+            <p className={styles.bodyTextCenteredLight} style={{ color: "rgba(255, 255, 255, 0.85)", maxWidth: "100%", textAlign: "center" }}>
               Secure Guard customizes active video monitoring to align with the specific operational layouts, high-value assets, and risk profiles of diverse commercial environments, delivering real-time threat response where traditional security falls short.
             </p>
           </div>
@@ -209,10 +209,10 @@ export default function HomePage() {
           <FloatingShapes shapeCount={18} />
         </div>
         <div className="container">
-          <div className={styles.standardHeader} style={{ marginBottom: 0 }}>
+          <div className={styles.standardHeader} style={{ marginBottom: 0, maxWidth: "100%" }}>
             <span className={styles.sectionTag}>Connected Security</span>
             <h2 className={styles.sectionTitle}>The Secure Guard Difference</h2>
-            <p className={styles.standardSubtitle}>
+            <p className={styles.standardSubtitle} style={{ maxWidth: "100%", textAlign: "center" }}>
               Cameras and automated alerts can flag activity, but they cannot assess intent or evaluate real-world risk. Secure Guard bridges this gap by pairing video technology with trained human judgment and integrated field operations. By combining remote live monitoring with dispatch support, mobile patrols, on-site officers, and detailed reporting, we deliver a fully connected security model.
             </p>
           </div>

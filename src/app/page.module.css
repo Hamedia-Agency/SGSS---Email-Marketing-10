@@ -140,7 +140,7 @@
 
 .heroContent {
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
   padding-top: 80px;
   padding-bottom: 120px;
   animation: heroFadeIn 0.85s ease both;
@@ -217,7 +217,7 @@
 .heroSubtitle {
   font-size: clamp(0.97rem, 1.8vw, 1.1rem);
   color: rgba(255, 255, 255, 0.8);
-  max-width: 680px;
+  max-width: 100%;
   margin-bottom: 36px;
   line-height: 1.75;
   font-weight: 400;
